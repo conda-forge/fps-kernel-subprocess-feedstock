@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - jupyverse-api >=0.10.0,<0.11.0
+    - jupyverse-api >=0.10.1,<0.11.0
     - anyio
     - pyzmq
     - zmq-anyio >=0.3.1,<0.4.0

@@ -1,5 +1,5 @@
 {% set name = "fps-kernel-subprocess" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_kernel_subprocess-{{ version }}.tar.gz
-  sha256: 307eae9046ac4591cb7d0c0370277ca2b0475c68987a5a60458cfede6aaa861e
+  sha256: 14024585e86eabeecc3aaa26ae9b03c5288adc159886486563ea91d413f6b361
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - jupyverse-api >=0.11.3,<0.12.0
+    - jupyverse-api >=0.12.0,<0.13.0
     - anyio
     - pyzmq
     - zmq-anyio >=0.3.1,<0.4.0

@@ -1,5 +1,5 @@
 {% set name = "fps-kernel-subprocess" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_kernel_subprocess-{{ version }}.tar.gz
-  sha256: 0965ba8a85b3b9e1b23b123f6dad3485ebf6fb0c51e9cf0e03e682b78059444a
+  sha256: 7cca96999ddb667da089f4ce86096e388762deffa1ba8e7cfd1f5f3f1a6aa1e7
 
 build:
   noarch: python

@@ -9,8 +9,6 @@ Package license: BSD-3-Clause
 
 Summary: An FPS plugin for the kernel subprocess API
 
-Development: https://github.com/jupyter-server/jupyverse/tree/main/plugins/kernel_subprocess
-
 Current build status
 ====================
 

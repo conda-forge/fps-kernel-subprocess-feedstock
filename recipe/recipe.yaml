@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.2.3"
+  version: "0.2.4"
 
 package:
   name: fps-kernel-subprocess
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-kernel-subprocess/fps_kernel_subprocess-${{ version }}.tar.gz
-    sha256: a5c13a455fadff458a7fec37567695bf0f60151c610dcd315def52471541d923
+    sha256: 8bc11064c6471c23583866a17af68d3f003736ffdf42b8d61c9d5692d77ced72
 
 build:
   noarch: python
@@ -34,7 +34,9 @@ tests:
   - python:
       imports: fps_kernel_subprocess
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   license: BSD-3-Clause
